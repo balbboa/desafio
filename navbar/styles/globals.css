@@ -1,0 +1,38 @@
+:root {
+	--main: #2b222f;
+	--green: #2fb640;
+	--red: #ff1430;
+	--orange: #fe2c31;
+	--yellow: #feb322;
+  }
+  
+  * {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	color: white;
+  }
+  
+  body {
+	background-color: var(--main);
+	margin: 0;
+	padding: 0;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #18131f;
+	height: 60px;
+  }
+  
+  a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+  }
+
+  button {
+	background-color: transparent;
+    border: 0;
+  }

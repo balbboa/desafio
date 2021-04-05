@@ -1,0 +1,179 @@
+.burgerNav svg {
+	color: white;
+	border: none;
+}
+
+.hLinks {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav {
+	display: block;
+	z-index: 999;
+	width: 100%;
+	background-color: #433b47;
+}
+
+.nav > ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+}
+
+.nav li > a {
+	display: block;
+	padding: 20px 10px;
+	border-bottom: 1px solid gray;
+}
+
+.dropdown > a {
+	background-color: var(--red);
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dropdownList {
+	display: block;
+}
+
+.dropdownList > li {
+	margin-left: 10%;
+}
+
+.pill {
+	font-size: .7rem;
+	background-color: var(--red);
+	border-radius: 5px;
+	margin-left: 5px;
+	padding: 4px 5px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+	text-align: center;
+	position: relative;
+}
+
+.progressBar {
+	background-color: white;
+	width: 100%;
+	height: 10px;
+	border-radius: 10px;
+}
+
+.bar {
+	background-color: var(--red);
+	background-image: linear-gradient(to right, var(--yellow), var(--orange));
+	border-radius: 10px;
+	width: 50%;
+	height: 100%;
+}
+
+.bottomLink {
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.bottomLink > a {
+	display: block;
+	padding: 15px 20px;
+	border: 2px solid var(--red);
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+header.header {
+	height: 70px;
+}
+
+.nav {
+	display: block;
+}
+
+.nav > ul {
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-bottom: 1px solid gray;
+}
+
+.nav li > a {
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nav li:not(.active) > a:hover {
+	background-color: var(--red);
+}
+
+.dropdown > a > svg {
+	margin-left: 1rem;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdownList {
+	position: absolute;
+	width: 110%;
+	background-color: #433b47;
+	border: 1px solid gray;
+	box-shadow: 1px 1px gray;
+}
+
+.dropdownList > li {
+	margin-left: 0;
+}
+
+.dropdownList > li > a {
+	border-bottom: 1px solid gray !important;
+}
+}
+
+.circleClassesPhone {
+	border-radius: 50%;
+	background: var(--red);
+	padding: 0.5rem;
+	margin-right: .5rem;
+	cursor: pointer;
+}
+
+.circleClassesWpp {
+	border-radius: 50%;
+	background: var(--green);
+	padding: 0.4rem;
+	margin-right: .5rem;
+	cursor: pointer;
+}
+
+.whatsapp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	background-color: var(--green);
+	border-radius: 50px;
+	z-index: 999;
+	cursor: pointer;
+}
